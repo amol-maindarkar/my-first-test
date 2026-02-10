@@ -8,6 +8,7 @@ $TargetBuild = 26100
 Write-Host "Detected OS Version: $OSVersion"
 Write-Host "Detected Build Number: $BuildNumber"
 
+# Find OS veriosn and compare to target build
 if ($BuildNumber -lt $TargetBuild) {
     Write-Host "This system is running Windows 11 version lower than 24H2."
 } elseif ($BuildNumber -eq $TargetBuild) {
